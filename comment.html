@@ -12,7 +12,7 @@
 	<h1>What's <span style="color: #e0a295; font-size: 60px">bunny</span> murmuring?</h1>
 	<h2 style="font-size: 11px">Listen Closely...</h2>
 	<p>
-	<form>
+	<form onsubmit="submitform()">
 		<p>Bunny Name:<input type="text" name="name" placeholder="Bobo" size="10"  style="margin-right:85px"> Bunny Mood:<select name="mood">
 			<option value="green">Happy</option>
 			<option value="yellow">Soso</option>
@@ -23,5 +23,18 @@
 			<textarea rows="4" cols="50" name="comment" placeholder="diu diu diu diu diu diu diu diu diu diu diu diu diu diu diu" style="vertical-align: top"></textarea> </p>
 		<p><input type="submit" name="submit" value="send"></p>
 	</form>
+</body>
+<script>
+	function submitform() {
+		let myname = document.querySelector('input[name="name"]').value;
+		let mymood = document.querySelector('select[name="mood"]').value;
+		let moodtext = "";
+			if (mymood === "green") {moodtext = "Happy"}
+			else if (mymood === "yellow") {moodtext = "Soso"}
+			else if (mymood === "red") {moodtext = "Angry"}
+			else if (mymood === "blue") {moodtext = "Sad"}
+		let mymurmur = document.querySelector('textarea[name="comment"]').value;
+		alert("Murmur heard." + myname + " is " + moodtext + ".")}
+</script>
 
 </html>
