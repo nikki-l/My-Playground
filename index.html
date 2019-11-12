@@ -1,64 +1,25 @@
 <html>
-	<head>
-		<title>Bunny land</title>
-		<link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
-		<style type="css"></style>
-		<style>
-			body {background: #fdfdfd;
-				background-image: url(https://www.bestfunforall.com/wallpaperbetter/imgs/Snow%20rabbit%20wallpaper%20%2010.jpg);
-				background-size: cover;
-				background-position: right}
-			a,p,h1 {color: black;
-				font-family: 'Barlow', sans-serif;
-				font-size: 11px;
-				text-align: center}
-			form {border-color: #bfd0e3; 
-				border-width: 1px;
-				border-style: dotted;
-				width: 500px;
-				margin: auto;
-				padding: 20px 0px;
-				background:#feffff;
-				border-radius: 40%;
-				transition: transform 0.8s;
-				transition-timing-function: ease-in-out;}
-			form:hover{
-				transform: translate(-240px);
-				transition: transform 0.2s
-				transition-timing-function: ease-in-out;
-			}
-		</style>
+<head>
+	<title>Bunny Murmur</title>
+	<link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
+	<style type="css"></style>
+	<style>
+		body {font-family: 'Barlow', sans-serif;
+		text-align: center}
+	</style>
+</head>
+<body>
+	<h1>What's <span style="color: #e0a295; font-size: 60px">bunny</span> murmuring?</h1>
+	<h2 style="font-size: 11px">Listen Closely...</h2>
+	<p>
+	<form>
+		<p>Bunny Name:<input type="text" name="name" placeholder="Bobo" size="10"  style="margin-right:85px"> Bunny Mood:<select name="mood">
+			<option value="green">Happy</option>
+			<option value="yellow">Soso</option>
+			<option value="red">Angry</option>
+			<option value="blue">Sad</option>
+		</select>
+		<p>	Bunny says:
+			<textarea rows="4" cols="50" name="comment" placeholder="diu diu diu diu diu diu diu diu diu diu diu diu diu diu diu" style="vertical-align: top"></textarea> </p>
 
-
-
-
-	</head>
-	<body>
-		<h1 style= "font-size: 100px; font-family: 'Barlow', sans-serif"><span style="color: #ffbaba">Hello</span> <span style="color: #ffff9f">world<span style="color: #ffdaa1">!</span></h1>
-		<p style="color: #bfd0e3">Bunny Land is a weird place</p>
-		
-		<form action="result.php" method="GET">
-			<p>First Name: <input type="text" name="first name" placeholder="Bunny" size="20"></p>
-			<p>Last Name: <input type="text" name="last name" placeholder="Ng" size="20"></p>
-			<p>Email: <input type="email" name="email" placeholder="example@example.com" size="24"></p>
-			<p>Password: <input type="Password" name="password" placeholder="at least 8 characters" size="20"></p>
-			<p>Birthday: <input type="date" name="birthday"></p>
-			<p>Gender: 
-				<select name="Gender">
-	  			<option value="M">Male</option>
-	  			<option value="F">Female</option>
-	  			<option value="U" selected>I'm a unicorn</option>
-			</select></p>
-			<p>Subcription Plan:</p>
-			<p><input type="radio" name="subcription" value="monthly"> Monthly </p>
-			<p><input type="radio" name="subcription" value="yearly"> Yearly </p>
-			<p><input type="radio" name="subcription" value="forever"> Forever </p>
-			<p>&nbsp;</p>
-			<p><input type="checkbox" name="terms" required>I agree to join Bunny Land!<a href="termsconditions.html" target="_blank"> </p>
-			<p>Read Terms and Conditions</a></p>
-			<p><input type="submit" name="button" value="join"></p>
-			<p><input type="reset" name="reset" value="start over"></p>
-		</form>
-
-	</body>
 </html>
