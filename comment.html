@@ -5,17 +5,27 @@
 	<style type="css"></style>
 	<style>
 		body {font-family: 'Barlow', sans-serif;
+		font-size: 11px;
 		text-align: center;
 		background-image: url(https://c.wallhere.com/photos/47/ab/winter_two_brown_white_snow_cute_rabbit_bunny-946450.jpg!d);
 		background-size: cover;
 		background-position: right;}
+		form {border-color: #bfd0e3;
+			border-width: 1px;
+			border-style: dotted;
+			width: 420px;
+			margin: auto;
+			padding: 110px 0px 130px 0px;
+			background:rgba(255,255,255,0.8);
+			border-radius: 50%}
 	</style>
 </head>
 <body>
-	<h1>What's <span style="color: #e0a295; font-size: 60px">bunny</span> murmuring?</h1>
-	<h2 style="font-size: 11px">Listen Closely...</h2>
+	<h1 style="font-size: 30px">What's <span style="color: #e0a295; font-size: 60px">bunny</span> murmuring?</h1>
 	<p>
 	<form onsubmit="submitform()">
+		<h2 style="font-size: 11px">Listen Closely...</h2>
+		<br>
 		<p>Bunny Name:<input type="text" name="name" placeholder="Bobo" size="10"  style="margin-right:85px"> Bunny Mood:<select name="mood">
 			<option value="green">Happy</option>
 			<option value="yellow">Soso</option>
@@ -23,7 +33,7 @@
 			<option value="blue">Sad</option>
 		</select>
 		<p>	Bunny says:
-			<textarea rows="4" cols="50" name="comment" placeholder="diu diu diu diu diu diu diu diu diu diu diu diu diu diu diu" style="vertical-align: top"></textarea> </p>
+			<textarea rows="4" cols="45" name="comment" placeholder="diu diu diu diu diu diu diu diu diu diu diu diu diu diu diu" style="vertical-align: top"></textarea> </p>
 		<p><input type="submit" name="submit" value="send"></p>
 	</form>
 </body>
