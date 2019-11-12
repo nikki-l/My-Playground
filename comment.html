@@ -17,7 +17,19 @@
 			margin: auto;
 			padding: 110px 0px 130px 0px;
 			background:rgba(255,255,255,0.8);
-			border-radius: 50%}
+			border-radius: 50%;
+		}
+		form:hover{
+			animation-name: jumpy;
+			animation-timing-function: ease-in-out;
+			animation-duration: 1s
+		}
+		@keyframes jumpy {
+			0% {transform: translateY(0px);}
+			30% {transform: translateY(-30px);}
+			50% {transform: translateY(0px);}
+			100% {transform: translateY(0px);}
+		}
 	</style>
 </head>
 <body>
@@ -29,7 +41,7 @@
 		<p>Bunny Name:<input type="text" name="name" placeholder="Bobo" size="10"  style="margin-right:85px"> Bunny Mood:<select name="mood">
 			<option value="green">Happy</option>
 			<option value="yellow">Soso</option>
-			<option value="red">Angry</option>
+			<option value="red" selected>Angry</option>
 			<option value="blue">Sad</option>
 		</select>
 		<p>	Bunny says:
